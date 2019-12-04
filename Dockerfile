@@ -1,5 +1,4 @@
 FROM node:6.11.2
-MAINTAINER Ted Cheng
 
 ENV APP_DIR=/app
 

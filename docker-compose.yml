@@ -4,11 +4,11 @@ services:
   dev-node:
     build: 
       context: .
-      dockerfile: Dockerfile-dev-node
+      dockerfile: Dockerfile
     volumes:
       - .:/app
       - /app/node_modules
-    command: tail -f /app/Dockerfile-dev-node
+    command: tail -f /app/Dockerfile
     environment:
       - HUB_PORT_4444_TCP_ADDR=hub
       - HUB_PORT_4444_TCP_PORT=4444
